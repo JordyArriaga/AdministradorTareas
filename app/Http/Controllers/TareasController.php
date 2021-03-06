@@ -50,7 +50,7 @@ class TareasController extends Controller
             $tarea->estado = 0;
             $tarea->idUser = Auth()->user()->id;
             $tarea->save();
-            return redirect()->route('home')->withInput()->with('success', 'La tearea se ha registrado correctamente');
+            return redirect()->route('home')->withInput()->with('success', 'La tarea se ha registrado correctamente');
     }
 
     /**
