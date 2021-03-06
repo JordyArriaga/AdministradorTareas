@@ -41,7 +41,7 @@ class TareasController extends Controller
                 ], 
                 [
                 'nombre.required' => '¡Debes ingresar el nombre de la Tarea!',
-                'nombre.required' => '¡Debes ingresar la decripción de la Tarea!',
+                'descripcion.required' => '¡Debes ingresar la decripción de la Tarea!',
                 ]
             );
             $tarea = new Tareas();
