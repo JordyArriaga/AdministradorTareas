@@ -92,10 +92,10 @@ class TareasController extends Controller
         $tarea->update();
         switch ($tarea->Estado) {
             case 1:
-                return redirect()->route('home')->withInput()->with('warning', 'La tearea se ha empezado correctamente');       
+                return redirect()->route('home')->withInput()->with('warning', 'La tarea se ha empezado correctamente');       
                 break;
             case 2:
-                return redirect()->route('home')->withInput()->with('success', 'La tearea se ha completado correctamente');
+                return redirect()->route('home')->withInput()->with('success', 'La tarea se ha completado correctamente');
                 break;
         }
     }
